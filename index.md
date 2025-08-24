@@ -2,7 +2,7 @@
 layout: home
 title: "Rivéo"
 excerpt: "Suivi des rivières par caméra — publication ouverte des jeux de données"
----
+
 
 permalink: /
 header:
@@ -15,7 +15,7 @@ header:
     - label: "Documentation"
       url: "{{ site.baseurl }}/docs/"
 excerpt: "Rivéo observe, calcule et publie automatiquement des indicateurs hydrologiques à partir de caméras fixes — les résultats sont disponibles en CSV/JSON et visualisables en ligne."
-
+---
 ## À propos
 
 **Rivéo** est une application de **suivi des rivières par caméra**.  

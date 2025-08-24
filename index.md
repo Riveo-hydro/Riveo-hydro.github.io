@@ -1,40 +1,37 @@
 ---
 layout: home
-title: "Derniers résultats"
-excerpt: "Site auto-déployé avec Jekyll + Minimal Mistakes"
+title: "Rivéo"
+excerpt: "Suivi des rivières par caméra — publication ouverte des jeux de données"
 ---
 
-Bienvenue 👋  
-Ce site publie automatiquement les dernières données.
+permalink: /
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.45"
+  overlay_image: /assets/images/logo.png 
+  actions:
+    - label: "Jeux de données"
+      url: "{{ site.baseurl }}/data/"
+    - label: "Documentation"
+      url: "{{ site.baseurl }}/docs/"
+excerpt: "Rivéo observe, calcule et publie automatiquement des indicateurs hydrologiques à partir de caméras fixes — les résultats sont disponibles en CSV/JSON et visualisables en ligne."
 
-- Données CSV : [`/data/mesures.csv`]({{ site.baseurl }}/data/mesures.csv)
-- Exemple de graphique et tableau ci-dessous (lecture du CSV côté navigateur).
+## À propos
 
-<div id="plot" style="height:360px;"></div>
-<table id="tbl" class="table table-sm"></table>
+**Rivéo** est une application de **suivi des rivières par caméra**.  
+Notre objectif : fournir des **mesures continues, traçables et accessibles** pour la recherche, la sécurité civile et la gestion de l’eau.
 
-<script>
-// Petit viewer CSV (vanilla JS) + trace simple (sans lib externe)
-async function run() {
-  const res = await fetch('{{ site.baseurl }}/data/mesures.csv');
-  const text = await res.text();
-  const [head, ...rows] = text.trim().split('\n').map(l => l.split(','));
-  const thead = `<thead><tr>${head.map(h=>`<th>${h}</th>`).join('')}</tr></thead>`;
-  const tbody = `<tbody>${
-    rows.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')
-  }</tbody>`;
-  document.getElementById('tbl').innerHTML = thead + tbody;
+Ce site GitHub Pages sert de **vitrine** et de **catalogue de données** :  
+- publication automatique des **jeux de données** produits par le moteur (CSV / JSON) ;
+- **visualisations** légères côté navigateur ;
+- **documentation** d’installation, de calibration et d’utilisation.
 
-  // Micro-graphique HTML (sans lib): on trace la 2e colonne comme sparkline
-  const y = rows.map(r => parseFloat(r[1]));
-  const w = 600, h = 120, max = Math.max(...y), min = Math.min(...y);
-  const pts = y.map((v,i)=>{
-    const x = Math.round(i*(w-10)/(y.length-1))+5;
-    const yy = h-5 - Math.round((v-min)*(h-10)/(max-min || 1));
-    return `${x},${yy}`;
-  }).join(' ');
-  document.getElementById('plot').innerHTML =
-    `<svg width="${w}" height="${h}"><polyline points="${pts}" fill="none" stroke="currentColor" stroke-width="2"/></svg>`;
-}
-run();
-</script>
+## Comment ça marche
+
+1. **Acquisition** — une caméra fixe capture des images/vidéos d’un tronçon de rivière.  
+2. **Analyse** — le moteur Rivéo détecte les repères, estime **niveaux** et **vitesses** (ex. LSPIV) et applique des contrôles qualité.  
+3. **Publication** — les résultats sont exportés en **CSV/JSON** et **publiés ici** avec une horodatation et des métadonnées.
+
+---
+
+Écris-nous : **riveo@USherbrooke.ca** 

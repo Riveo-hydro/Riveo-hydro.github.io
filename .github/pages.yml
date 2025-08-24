@@ -1,0 +1,50 @@
+name: Build & Deploy Jekyll (Minimal Mistakes)
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Install deps
+        run: bundle install --path vendor/bundle
+
+      - name: Build Jekyll
+        run: bundle exec jekyll build --trace
+        env:
+          JEKYLL_ENV: production
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

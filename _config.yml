@@ -1,0 +1,33 @@
+title: "Mes mesures"
+description: "Publication de résultats de points de mesure"
+url: "https://riveo-hydro.github.io/"        
+baseurl: ""                              
+
+# Thème Minimal Mistakes (via gem OU remote_theme). Ici via gem:
+theme: minimal-mistakes-jekyll
+plugins:
+  - jekyll-include-cache
+
+# Dossiers utiles
+include:
+  - _pages
+  - data
+
+# Options MM (basique)
+minimal_mistakes_skin: "default"  # autres: air, contrast, dark, dirt, neon...
+locale: fr-FR
+
+# Navigation (exemple)
+nav:
+  - title: "Accueil"
+    url: /
+  - title: "À propos"
+    url: /a-propos/
+
+# Permaliens plus jolis
+permalink: /:categories/:title/
+
+# Build
+markdown: kramdown
+kramdown:
+  input: GFM

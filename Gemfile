@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3"
-gem "minimal-mistakes-jekyll", "~> 4.24"
+# Laisse GitHub Pages gérer les versions de Jekyll/Plugins
+gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache"
-
 # GitHub Actions utilisera Bundler pour installer ces gems

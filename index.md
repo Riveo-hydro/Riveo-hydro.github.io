@@ -6,9 +6,8 @@ excerpt: "Suivi des rivières par caméra — publication ouverte des jeux de do
 
 permalink: /
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.45"
-  overlay_image: /assets/images/logo.png 
+  overlay_color: "#0b7fab"   # bleu Rivéo
+  overlay_filter: "0.15"     # petite transparence
   actions:
     - label: "Jeux de données"
       url: "{{ site.baseurl }}/data/"

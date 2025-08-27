@@ -10,9 +10,9 @@ header:
   overlay_filter: "0.15"     # petite transparence
   actions:
     - label: "Jeux de données"
-      url: "{{ site.baseurl }}/data/"
+      url: "/data/"
     - label: "Documentation"
-      url: "{{ site.baseurl }}/docs/"
+      url: "/docs/"
 excerpt: "Rivéo observe, calcule et publie automatiquement des indicateurs hydrologiques à partir de caméras fixes — les résultats sont disponibles en CSV/JSON et visualisables en ligne."
 ---
 ## À propos

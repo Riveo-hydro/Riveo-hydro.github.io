@@ -4,7 +4,7 @@ layout: single
 permalink: /data/
 classes: wide
 ---
-
+<section id="matapedia" class="tab-pane active" markdown="1">
 <!-- ===== Onglets lieux (tu pourras en ajouter d'autres plus tard) ===== -->
 <nav class="tabs">
   <a class="tab active" href="#matapedia">Matapédia</a>
@@ -37,7 +37,7 @@ classes: wide
   // Leaflet carte simple
   document.addEventListener("DOMContentLoaded", function () {
     if (!window.L) return;
-    const map = L.map('map-matapedia', { scrollWheelZoom: false }).setView([48.35349918652086, -67.22255497464408], 12);
+    const map = L.map('map-matapedia', { scrollWheelZoom: false }).setView([48.35349918652086, -67.22255497464408], 8);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
       attribution: '&copy; OpenStreetMap'

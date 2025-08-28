@@ -15,7 +15,7 @@ classes: wide
 </nav>
 
 <section id="matapedia" class="tab-pane active">
-  <h3>Matapédia — aperçu</h3>
+  <h3>Matapédia</h3>
 
   <!-- GIF hébergé dans un autre repo GitHub public -->
   <div class="media-row">
@@ -25,7 +25,7 @@ classes: wide
         alt="Aperçu caméra — Matapédia"
         loading="lazy"
       />
-      <figcaption>GIF d’aperçu de la rivière (source : dépôt GitHub public)</figcaption>
+      <figcaption>GIF d’aperçu de la rivière</figcaption>
     </figure>
   </div>
 
@@ -46,7 +46,7 @@ classes: wide
 
   <h4>Téléchargements</h4>
 
-  <p class="note">Chaque cellule pointe vers un CSV hébergé sur un autre dépôt GitHub public (utilise de préférence <code>https://raw.githubusercontent.com/...</code>).</p>
+  <p class="note">Chaque cellule pointe vers un CSV hébergé sur le dépot de publication.</p>
 
   <table class="dataset-table">
     <thead>

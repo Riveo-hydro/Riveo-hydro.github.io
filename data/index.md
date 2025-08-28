@@ -59,18 +59,18 @@ classes: wide
     <tbody>
       <tr>
         <td><strong>Brut</strong></td>
-        <td><a href="https://raw.githubusercontent.com/OWNER-STAGING/REPO-STAGING/BRANCH/data/matapedia_brut.csv">CSV brut (staging)</a></td>
-        <td><a href="https://raw.githubusercontent.com/OWNER-PROD/REPO-PROD/BRANCH/data/matapedia_brut.csv">CSV brut (prod)</a></td>
-      </tr>
-      <tr>
+        <td><a href="https://raw.githubusercontent.com/Riveo-hydro/Publication/main/Colvert/Staging/brut.csv">CSV brut (staging)</a></td>
+    <td><span class="btn is-disabled" aria-disabled="true" title="Bientôt disponible">CSV brut (prod)</span></td>
+    </tr>
+    <tr>
         <td><strong>Vue posttraitée</strong></td>
-        <td><a href="https://raw.githubusercontent.com/OWNER-STAGING/REPO-STAGING/BRANCH/data/matapedia_vue_posttraitee.csv">CSV vue posttraitée (staging)</a></td>
-        <td><a href="https://raw.githubusercontent.com/OWNER-PROD/REPO-PROD/BRANCH/data/matapedia_vue_posttraitee.csv">CSV vue posttraitée (prod)</a></td>
-      </tr>
-      <tr>
+        <td><span class="btn is-disabled" aria-disabled="true" title="Bientôt disponible">CSV vue posttraitée (staging)</span></td>
+        <td><span class="btn is-disabled" aria-disabled="true" title="Bientôt disponible">CSV vue posttraitée (prod)</span></td>
+    </tr>
+    <tr>
         <td><strong>Débit traité</strong></td>
-        <td><a href="https://raw.githubusercontent.com/OWNER-STAGING/REPO-STAGING/BRANCH/data/matapedia_debit_traite.csv">CSV débit traité (staging)</a></td>
-        <td><a href="https://raw.githubusercontent.com/OWNER-PROD/REPO-PROD/BRANCH/data/matapedia_debit_traite.csv">CSV débit traité (prod)</a></td>
+        <td><span class="btn is-disabled" aria-disabled="true" title="Bientôt disponible">CSV débit traité (staging)</span></td>
+        <td><span class="btn is-disabled" aria-disabled="true" title="Bientôt disponible">CSV débit traité (prod)</span></td>
       </tr>
     </tbody>
   </table>

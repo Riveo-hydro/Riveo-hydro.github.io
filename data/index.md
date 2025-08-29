@@ -64,7 +64,7 @@ classes: wide
     </tr>
     <tr>
         <td><strong>Vue posttraitée</strong></td>
-        <td><span class="btn is-disabled" aria-disabled="true" title="Bientôt disponible">CSV vue posttraitée (staging)</span></td>
+        <td><a href="https://raw.githubusercontent.com/Riveo-hydro/Publication/main/Colvert/Staging/mesures_agregees.csv">CSV vue posttraitée (staging)</a></td>
         <td><span class="btn is-disabled" aria-disabled="true" title="Bientôt disponible">CSV vue posttraitée (prod)</span></td>
     </tr>
     <tr>

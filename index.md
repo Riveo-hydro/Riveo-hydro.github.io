@@ -31,6 +31,8 @@ Ce site GitHub Pages sert de **vitrine** et de **catalogue de données** :
 2. **Analyse** — le moteur Rivéo détecte les repères, estime **niveaux** et **vitesses** (ex. LSPIV) et applique des contrôles qualité.  
 3. **Publication** — les résultats sont exportés en **CSV/JSON** et **publiés ici** avec une horodatation et des métadonnées.
 
+Vinnie baby was here
+
 ---
 
 Écris-nous : **riveo@USherbrooke.ca** 

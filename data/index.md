@@ -133,6 +133,19 @@ classes: wide
   gap: 1rem;
   margin: 1.2rem 0;
 }
+
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 .gallery figure {
   position: relative;
   aspect-ratio: 16 / 9;
@@ -143,6 +156,7 @@ classes: wide
   background: #fff;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .gallery figure:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 20 px rgba(0,0,0,0.12);

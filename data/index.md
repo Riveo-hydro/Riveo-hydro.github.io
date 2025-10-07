@@ -143,7 +143,7 @@ classes: wide
   background: #fff;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.gallery figure.hover {
+.gallery figure:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 20 px rgba(0,0,0,0.12);
 }
@@ -156,15 +156,12 @@ classes: wide
 }
 
 .gallery figcaption {
-    position: absolute;
-    bottom: 6px;
-    left: 6px;
-    background: #fafafa;
-    text-align: center;
-    padding: 2px 6 px;
-    font-size: 0.85rem;
-    border-radius: 4px;
-    color: #333;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.9rem;
+  color: #555;
+  background: #fafafa;
+  text-align: center;
+  border-top: 1px solid #eee;
 }
 
 /* Tableau datasets */

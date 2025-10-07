@@ -182,6 +182,28 @@ classes: wide
     border-top: 1px solid #eee;
 }
 
+/* --- Lightbox --- */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 85%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  cursor: zoom-out;
+}
+
 /* Tableau datasets */
 .dataset-table { width:100%; border-collapse:collapse; }
 .dataset-table th, .dataset-table td { padding:.6rem .7rem; border-top:1px solid #eee; }
@@ -224,3 +246,17 @@ document.addEventListener('DOMContentLoaded', () => {
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
   crossorigin=""
 ></script>
+
+<!-- ===== Lightbox ===== -->
+<script>
+document.querySelectorAll('.gallery img').forEach(img => {
+  img.addEventListener('click', () => {
+    const lightbox = document.createElement('div');
+    lightbox.classList.add('lightbox');
+    lightbox.innerHTML = `<img src="${img.src}" alt="">`;
+    document.body.appendChild(lightbox);
+    lightbox.style.display = 'flex';
+    lightbox.addEventListener('click', () => lightbox.remove());
+  });
+});
+</script>

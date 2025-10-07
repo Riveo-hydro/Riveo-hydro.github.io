@@ -47,27 +47,27 @@ classes: wide
   <h4>Galerie</h4>
   <div class="gallery">
     <figure>
-      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/refs/heads/main/Colvert/Prod/SIM1/images/latest.png" alt="Rivière Matapédia - Dernière prise" loading="lazy">
+      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/refs/heads/main/Colvert/Prod/SIM1/images/latest.png" alt="Rivière Matapédia - Dernière prise">
       <figcaption>Dernière prise</figcaption>
     </figure>
     <figure>
-      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/refs/heads/main/Colvert/Prod/SIM1/images/2h.png" alt="Rivière Matapédia - 2 h" loading="lazy">
+      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/refs/heads/main/Colvert/Prod/SIM1/images/2h.png" alt="Rivière Matapédia - 2 h">
       <figcaption>2 h</figcaption>
     </figure>
     <figure>
-      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/refs/heads/main/Colvert/Prod/SIM1/images/5h.png" alt="Rivière Matapédia - 5 h" loading="lazy">
+      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/refs/heads/main/Colvert/Prod/SIM1/images/5h.png" alt="Rivière Matapédia - 5 h">
       <figcaption>5 h</figcaption>
     </figure>
     <figure>
-      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/refs/heads/main/Colvert/Prod/SIM1/images/10h.png" alt="Rivière Matapédia - 10 h" loading="lazy">
+      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/refs/heads/main/Colvert/Prod/SIM1/images/10h.png" alt="Rivière Matapédia - 10 h">
       <figcaption>10 h</figcaption>
     </figure>
     <figure>
-      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/refs/heads/main/Colvert/Prod/SIM1/images/24h.png" alt="Rivière Matapédia - 24 h" loading="lazy">
+      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/refs/heads/main/Colvert/Prod/SIM1/images/24h.png" alt="Rivière Matapédia - 24 h">
       <figcaption>24 h</figcaption>
     </figure>
     <figure>
-      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/refs/heads/main/Colvert/Prod/SIM1/images/48h.png" alt="Rivière Matapédia - 48 h" loading="lazy">
+      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/refs/heads/main/Colvert/Prod/SIM1/images/48h.png" alt="Rivière Matapédia - 48 h">
       <figcaption>48 h</figcaption>
     </figure>
   </div>
@@ -126,7 +126,7 @@ classes: wide
 }
 .map { width:100%; height:340px; border-radius:14px; margin:.8rem 0 1.2rem; box-shadow:0 8px 20px rgba(0,0,0,.06); }
 
-/* Galarie */
+/* Galerie */
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -141,18 +141,18 @@ classes: wide
 }
 
 @media (max-width: 600px) {
-  .gallery {
-    grid-template-columns: 1fr;
-  }
+    .gallery {
+      grid-template-columns: 1fr;
+    }
 }
 
 .gallery figure {
-  position: relative;
-  aspect-ratio: 16 / 9;
-  margin: 0;
+  position: flex !important;
+  flex-direction: column !important;
+  margin: 0 !important;
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.00);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
   background: #fff;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -163,19 +163,23 @@ classes: wide
 }
 
 .gallery img {
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   display: block;
 }
 
 .gallery figcaption {
-  padding: 0.5rem 0.7rem;
-  font-size: 0.9rem;
-  color: #555;
-  background: #fafafa;
-  text-align: center;
-  border-top: 1px solid #eee;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    padding: 0.5rem 0.7rem;
+    font-size: 0.9rem;
+    color: #555;
+    background: #fafafa;
+    text-align: center;
+    border-top: 1px solid #eee;
 }
 
 /* Tableau datasets */

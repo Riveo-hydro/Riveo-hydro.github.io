@@ -47,27 +47,27 @@ classes: wide
   <h4>Galerie</h4>
   <div class="gallery">
     <figure>
-      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/blob/main/Colvert/Prod/SIM1/images/latest.png" alt="Rivière Matapédia - Dernière prise" loading="lazy">
+      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/refs/heads/main/Colvert/Prod/SIM1/images/latest.png" alt="Rivière Matapédia - Dernière prise" loading="lazy">
       <figcaption>Dernière prise</figcaption>
     </figure>
     <figure>
-      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/blob/main/Colvert/Prod/SIM1/images/2h.png" alt="Rivière Matapédia - 2 h" loading="lazy">
+      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/refs/heads/main/Colvert/Prod/SIM1/images/2h.png" alt="Rivière Matapédia - 2 h" loading="lazy">
       <figcaption>2 h</figcaption>
     </figure>
     <figure>
-      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/blob/main/Colvert/Prod/SIM1/images/5h.png" alt="Rivière Matapédia - 5 h" loading="lazy">
+      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/refs/heads/main/Colvert/Prod/SIM1/images/5h.png" alt="Rivière Matapédia - 5 h" loading="lazy">
       <figcaption>5 h</figcaption>
     </figure>
     <figure>
-      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/blob/main/Colvert/Prod/SIM1/images/10h.png" alt="Rivière Matapédia - 10 h" loading="lazy">
+      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/refs/heads/main/Colvert/Prod/SIM1/images/10h.png" alt="Rivière Matapédia - 10 h" loading="lazy">
       <figcaption>10 h</figcaption>
     </figure>
     <figure>
-      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/blob/main/Colvert/Prod/SIM1/images/24h.png" alt="Rivière Matapédia - 24 h" loading="lazy">
+      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/refs/heads/main/Colvert/Prod/SIM1/images/24h.png" alt="Rivière Matapédia - 24 h" loading="lazy">
       <figcaption>24 h</figcaption>
     </figure>
     <figure>
-      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/blob/main/Colvert/Prod/SIM1/images/48h.png" alt="Rivière Matapédia - 48 h" loading="lazy">
+      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/refs/heads/main/Colvert/Prod/SIM1/images/48h.png" alt="Rivière Matapédia - 48 h" loading="lazy">
       <figcaption>48 h</figcaption>
     </figure>
   </div>

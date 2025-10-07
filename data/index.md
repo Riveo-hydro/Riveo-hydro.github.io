@@ -153,7 +153,7 @@ classes: wide
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 6px 14px rgba(0,0,0,0.08);
-  background: #fff;
+  background: #002060;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -176,10 +176,10 @@ classes: wide
     position: relative !important;
     padding: 0.5rem 0.7rem;
     font-size: 0.9rem;
-    color: #555;
-    background: #fafafa;
+    color: #fff;
+    background: #002060;
     text-align: center;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #002060;
 }
 
 /* --- Lightbox --- */

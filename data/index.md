@@ -44,6 +44,34 @@ classes: wide
     });
   </script>
 
+  <h4>Galerie</h4>
+  <div class="gallery">
+    <figure>
+      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/blob/main/Colvert/Prod/SIM1/images/latest.png" alt="Rivière Matapédia - Dernière prise" loading="lazy">
+      <figcaption>Dernière prise</figcaption>
+    </figure>
+    <figure>
+      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/blob/main/Colvert/Prod/SIM1/images/2h.png" alt="Rivière Matapédia - 2 h" loading="lazy">
+      <figcaption>2 h</figcaption>
+    </figure>
+    <figure>
+      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/blob/main/Colvert/Prod/SIM1/images/5h.png" alt="Rivière Matapédia - 5 h" loading="lazy">
+      <figcaption>5 h</figcaption>
+    </figure>
+    <figure>
+      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/blob/main/Colvert/Prod/SIM1/images/10h.png" alt="Rivière Matapédia - 10 h" loading="lazy">
+      <figcaption>10 h</figcaption>
+    </figure>
+    <figure>
+      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/blob/main/Colvert/Prod/SIM1/images/24h.png" alt="Rivière Matapédia - 24 h" loading="lazy">
+      <figcaption>24 h</figcaption>
+    </figure>
+    <figure>
+      <img src="https://raw.githubusercontent.com/Riveo-hydro/Publication/blob/main/Colvert/Prod/SIM1/images/48h.png" alt="Rivière Matapédia - 48 h" loading="lazy">
+      <figcaption>48 h</figcaption>
+    </figure>
+  </div>
+
   <h4>Téléchargements</h4>
 
   <p class="note">Chaque cellule pointe vers un CSV hébergé sur le dépot de publication.</p>
@@ -97,6 +125,40 @@ classes: wide
   display:block; max-width:100%; height:auto; border-radius:14px; box-shadow:0 8px 20px rgba(0,0,0,.06);
 }
 .map { width:100%; height:340px; border-radius:14px; margin:.8rem 0 1.2rem; box-shadow:0 8px 20px rgba(0,0,0,.06); }
+
+/* Galarie */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+.gallery figure {
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.00);
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.gallery figure.hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20 px rgba(0,0,0,0.12);
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery figcaption {
+    text-align: center;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+    color: #666;
+    background: #fafafa;
+}
 
 /* Tableau datasets */
 .dataset-table { width:100%; border-collapse:collapse; }

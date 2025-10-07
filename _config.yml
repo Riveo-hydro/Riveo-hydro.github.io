@@ -18,9 +18,7 @@ include:
 
 # Options MM (basique)  # autres: air, contrast, dark, dirt, neon...
 locale: fr-FR
-
 logo: /assets/images/logo.png
-masthead_title: ""
 
 # Navigation (exemple)
 nav:

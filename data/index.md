@@ -129,11 +129,13 @@ classes: wide
 /* Galarie */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin: 1.2rem 0;
 }
 .gallery figure {
+  position: relative;
+  aspect-ratio: 16 / 9;
   margin: 0;
   border-radius: 14px;
   overflow: hidden;
@@ -148,16 +150,21 @@ classes: wide
 
 .gallery img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
 .gallery figcaption {
-    text-align: center;
-    padding: 0.4rem 0.6rem;
-    font-size: 0.9rem;
-    color: #666;
+    position: absolute;
+    bottom: 6px;
+    left: 6px;
     background: #fafafa;
+    text-align: center;
+    padding: 2px 6 px;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    color: #333;
 }
 
 /* Tableau datasets */
